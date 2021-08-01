@@ -33,9 +33,9 @@ const About = () => {
                   </button>
                 </div> */}
                 <div className="tokyo_tm_button">
-                  <button onClick={toggleModal} className="ib-button">
+                  <a href="./assets/file/resume.pdf" target="_blank" download className="ib-button">
                     Download Resume
-                  </button>
+                  </a>
                 </div>
               </div>
 

@@ -13,12 +13,13 @@ const Contact = () => {
   function sendEmail(e) {
     e.preventDefault();
 
+    console.log(process.env.REACT_APP_TEMPLATE_ID,process.env.REACT_APP_USER_ID)
     emailjs
       .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         e.target,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
+        process.env.REACT_APP_USER_ID
       )
       .then((res) => {
         console.log(res);
@@ -43,16 +44,6 @@ const Contact = () => {
         </div>
         {/* END TITLE */}
 
-        <div className="map_wrap">
-          <div className="map">
-            <ReactMapGL
-              mapStyle={"mapbox://style/mapbox/dark-v9"}
-              mapboxApiAccessToken="pk.eyJ1IjoiYmF5YXppZGgiLCJhIjoiY2tvemdwc3ByMDg1YzJubzQxcDR0cDR3dyJ9.s1zXEb5OPqgBDcmupj3GBA"
-              {...viewport}
-              onViewportChange={(nextViewport) => setViewport(nextViewport)}
-            />
-          </div>
-        </div>
         {/* MENU WRAP */}
 
         <div className="fields">

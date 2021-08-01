@@ -15,11 +15,7 @@ const HomeLight = () => {
           {/* START LEFT MENU CONTENT */}
           <div className="leftpart">
             <div className="leftpart_inner">
-              <div className="logo">
-                <Link className="navbar-brand" to="/">
-                  <img src="/assets/img/logo/dark.png" alt="brand" />
-                </Link>
-              </div>
+            
               {/* END LOGO */}
 
               <div className="menu">
@@ -54,7 +50,7 @@ const HomeLight = () => {
                       src="/assets/img/svg/paper.svg"
                       alt="paper"
                     />
-                    <span className="menu_content">News</span>
+                    <span className="menu_content">Blog</span>
                   </Tab>
                   <Tab>
                     <img
@@ -68,19 +64,7 @@ const HomeLight = () => {
               </div>
               {/* END MENU */}
 
-              <div className="copyright">
-                <p>
-                  &copy; {new Date().getFullYear()} Tokyo <br /> Created by
-                  <a
-                    href="https://themeforest.net/user/ib-themes"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Ib-Themes
-                  </a>
-                </p>
-              </div>
-              {/* END COPYRIGHT */}
+             
             </div>
           </div>
           {/* END LEFT MENU CONTENT */}

@@ -23,7 +23,7 @@ const Home = () => {
               I am passionate about creating AI driven products for users.
             </p>
             {/* END JOB */}
-            <Social />
+            {/* <Social /> */}
           </div>
           {/* END DETAILS */}
         </div>
